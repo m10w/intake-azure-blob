@@ -1,0 +1,12 @@
+name: intake-azure-blob
+channels:
+  - intake
+  - defaults
+dependencies:
+  - python=3.7
+  - intake
+  - intake-azure-blob
+  - pip:
+    - sphinx
+    - sphinx-rtd-theme
+    - numpydoc

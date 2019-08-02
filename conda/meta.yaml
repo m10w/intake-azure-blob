@@ -1,0 +1,40 @@
+package:
+   name: intake_azure_blob
+   version: {{ GIT_DESCRIBE_TAG }}
+
+source:
+   path: ..
+git:
+  depth: false
+
+build:
+  number: {{ GIT_DESCRIBE_NUMBER }}
+  script: python setup.py install --single-version-externally-managed --record=record.txt
+  noarch: python
+
+requirements:
+  build:
+    - python
+    - jinja2
+    - pandas
+  run:
+    - intake>=0.2
+    - s3fs
+    - dask
+    - pandas
+    - dask-azureblobfs
+
+test:
+  source_files:
+    - tests
+  requires:
+    - pytest
+  commands:
+    - py.test --verbose
+
+about:
+  home: https://github.com/hamed2005/intake-azure-blob
+  license: BSD
+  license_file: LICENSE
+  summary: |
+    Azure Blob plugin for Intake

@@ -1,0 +1,12 @@
+plugins:
+  source:
+    - module: intake_azure_blob
+sources:
+  mogreps_g_manifest:
+    description: The Azure Blob.
+    driver: azure_blob
+    args:
+      blob_uri: 'test'
+      storage_account_name: 'test_account'
+      access_key: ''
+      azure_blob_prefix: './tests/data/'
