@@ -1,0 +1,8 @@
+jinja2
+intake
+dask
+requests
+pandas
+scipy
+pytest
+dask-azureblobfs
