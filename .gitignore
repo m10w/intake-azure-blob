@@ -4,5 +4,10 @@
 .idea/
 __pycache__/
 .cache/
-*egg-info/
+
 .vscode/
+
+# Distribution/Packaging
+build/
+dist/
+*.egg-info/
