@@ -10,12 +10,13 @@ from azureblobfs.dask import DaskAzureBlobFileSystem
 
 class AzureBlobSource(DataSource):
     """Common behaviours for plugins in this repo"""
-    name = 'azure_source'
+    name = 'azure_blob'
     version = __version__
     container = 'dataframe'
     partition_access = True
 
-    def __init__(self, blob_uri, storage_account_name, access_key, azure_blob_prefix='abfs://', kwargs=None):
+    def __init__(self, blob_uri, storage_account_name, access_key, azure_blob_prefix='abfs://', 
+                    kwargs=None, metadata=None):
         """
         Parameters
         ----------
