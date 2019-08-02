@@ -18,7 +18,7 @@ def test_local_prefix_catalog(local_prefix_cat):
     source = local_prefix_cat['test_azure_blob'].get()
     ds = source.read()
     assert isinstance(ds, pd.DataFrame)
-    assert len(ds) == 622007
+    assert len(ds) == 3
 
 
 def test_azure_prefix_catalog():
@@ -43,4 +43,4 @@ def test_azure_prefix_catalog():
         source = azure_prefix_cat['test_azure_blob'].get()
         ds = source.read()
         assert isinstance(ds, pd.DataFrame)
-        assert len(ds) == 622007
+        assert len(ds) == 3
