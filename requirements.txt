@@ -1,5 +1,5 @@
-intake
-dask
+intake==0.5.1
+dask==2.1.0
 requests
 pandas
 scipy
