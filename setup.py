@@ -20,4 +20,10 @@ setup(
     include_package_data=True,
     install_requires=requires,
     long_description=open('README.md').read(),
-    zip_safe=False, )
+    zip_safe=False,
+    entry_points={
+        'intake.drivers': [
+            'azure_blob = intake_azure_blob.azure_blob.AzureBlobSource'
+        ]
+    },
+)
