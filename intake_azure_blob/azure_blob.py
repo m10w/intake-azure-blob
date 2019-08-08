@@ -15,7 +15,7 @@ class AzureBlobSource(DataSource):
     container = 'dataframe'
     partition_access = True
 
-    def __init__(self, blob_uri, storage_account_name, access_key, azure_blob_prefix='abfs://', 
+    def __init__(self, blob_uri, storage_account_name=None, access_key=None, azure_blob_prefix='abfs://', 
                     kwargs=None, metadata=None):
         """
         Parameters
