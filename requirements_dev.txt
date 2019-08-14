@@ -1,0 +1,3 @@
+pip
+tox
+flake8
