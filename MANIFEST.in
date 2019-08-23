@@ -1,5 +1,14 @@
 recursive-include . *.html
 recursive-include . *.csv
 recursive-include . *.yml
+recursive-include . *.rst
+recursive-include docs *.rst conf.py Makefile make.bat *.jpg *.png *.gif
+recursive-include * __pycache__
+recursive-include * *.py[co]
+recursive-include tests *
+
+include requirements*.txt
 include versioneer.py
 include intake_azure_blob/_version.py
+include LICENSE
+include README.md
