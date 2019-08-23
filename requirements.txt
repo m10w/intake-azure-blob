@@ -1,7 +1,8 @@
 intake==0.5.1
-dask==2.1.0
+dask[dataframe]==2.1.0
 requests
 pandas
 scipy
 pytest
 dask-azureblobfs
+toolz
