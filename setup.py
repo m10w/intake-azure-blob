@@ -1,10 +1,17 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 import os
+import sys
 from setuptools import setup, find_packages
 import versioneer
 
+here = os.path.abspath(os.path.dirname(__file__))
+
+sys.path.insert(0, here)
+
 requirements_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'requirements.txt')
+
 with open(requirements_path) as requirements_file:
     requires = requirements_file.readlines()
 
