@@ -1,6 +1,6 @@
 jinja2
 intake==0.5.1
-dask==2.1.0
+dask==2021.10.0
 requests
 pandas
 scipy
